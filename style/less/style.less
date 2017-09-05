@@ -14,55 +14,6 @@
   color: @color;
 }
 
-.u-header-1 {
-  font-size: 25px;
-  font-family: 'Fjalla One', sans-serif;
-  font-weight: normal;
-  line-height: 36px;
-  color: @gray;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
-
-.u-header-2 {
-  font-size: 21px;
-  font-family: 'Fjalla One', sans-serif;
-  font-weight: normal;
-  color: @dark-gray;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  @media screen and (max-width: 520px) {
-    font-size: 18px;
-  }
-}
-
-.u-header-3 {
-  font-size: 20px;
-  font-family: 'Lato', sans-serif;
-  font-weight: normal;
-  color: @red;
-  letter-spacing: 1px;
-}
-
-.u-header-4 {
-  font-size: 16px;
-  font-family: 'Lato', sans-serif;
-  font-weight: bold;
-  color: @dark-gray;
-}
-
-.u-text {
-  font-family: 'Lato', sans-serif;
-  color: @medium-gray;
-  font-size: 14px;
-  line-height: 24px;
-  font-style: normal;
-  hyphens: manual;
-  @media screen and (max-width: 520px) {
-    line-height: 14px;
-  }
-}
-
 .u-icon-image(@color, @margin) {
   display: flex;
   justify-content: center;
@@ -136,36 +87,54 @@ body {
   text-decoration: none;
 }
 
-.o-navigation-row {
-  background-color: @dark-gray;
-  font-family: 'Fjalla One', sans-serif;
-  text-transform: uppercase;
-}
 
-.o-navigation-row__content {
-  display: flex;
-  justify-content: space-between;
-}
-
-.o-navigation-row__logo {
+h1 {
   font-size: 25px;
-  padding: 24px 0;
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: normal;
+  line-height: 36px;
   color: @gray;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
-.o-navigation-row__links-list\@lg {
-  display: flex;
-  flex-direction: row;
-  @media screen and (max-width: 1000px) {
-    display: none;
+h2 {
+  font-size: 18px;
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: normal;
+  color: @dark-gray;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  @media screen and (min-width: 520px) {
+    font-size: 21px;
   }
 }
 
-.o-navigation-row__links-list\@md {
-  display: none;
-  position: absolute;
-  width: 100%;
-  z-index: 10;
+h3 {
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  color: @red;
+  letter-spacing: 1px;
+}
+
+h4 {
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  color: @dark-gray;
+}
+
+p, blockquote, address {
+  font-family: 'Lato', sans-serif;
+  color: @medium-gray;
+  font-size: 14px;
+  line-height: 14px;
+  font-style: normal;
+  hyphens: manual;
+  @media screen and (min-width: 520px) {
+    line-height: 24px;
+  }
 }
 
 .o-navigation-row__toggle-button {
